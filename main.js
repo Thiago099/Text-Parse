@@ -1,7 +1,7 @@
 let name_sex=["male","female"]
 let color_sex=["#8AA6E9","#E196B3"]
 
-let dic=dictionary(
+let dic= new dictionary(
   [
     "joao",
     "maria",
@@ -12,9 +12,10 @@ let dic=dictionary(
 )
 
 let sex=(name)=>{
-  let m=dictate(dic,name);
+  let m=dic.find(name);
   write_line(name,m.found?color_sex[m.value]:"magenta")
 }
+
 sex("joao");
 sex("bruna");
 sex("pedro");
