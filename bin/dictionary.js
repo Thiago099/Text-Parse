@@ -41,23 +41,22 @@ const append=(dictionary,value)=>
 {
   match(dictionary,mind(dictionary,value.index),value);
 }
-const dictionary=(array,value)=>
-{
-  let ret=[]
-  for (let i = 0; i < array.length; i++) {
-    let item = array[i];
-    let h=hash(item);
-    append(ret,{index:h,value:value[i]})
-  };
-  return ret;
-}
-const dictate=(dictionary,name)=>
-{
-  let v=find(dictionary,hash(name));
-  if(v.found)
-  return {
-    value:v.value,
-    found:true
-  };
-  return {found:false};
+class dictionary {
+  constructor(key,value) {
+    this.data=[];
+    for (let i = 0; i < key.length; i++) {
+      let item = key[i];
+      let h=hash(item);
+      append(this.data,{index:h,value:value[i]})
+    };
+  }
+  find(name){
+    let v=find(this.data,hash(name));
+    if(v.found)
+    return {
+      value:v.value,
+      found:true
+    };
+    return {found:false};
+  }
 }
