@@ -1,34 +1,34 @@
-const find=(dictionary,value)=>{
+const find=(array,value)=>{
   let l = 0;
-  let r = dictionary.length-1;
+  let r = array.length-1;
   let c = 0;
   let com = 0;
   while (l <= r)
   {
     c = Math.floor((l + r) / 2);
-    com = dictionary[c].index-value;
+    com = array[c].index-value;
     if (com > 0) r = c - 1;
     else if (com < 0) l = c + 1;
-    else return {value:dictionary[c].value,found:true};
+    else return {value:array[c].value,found:true};
   }
   return {id:c,found:false};
 }
 
-const mind=(dictionary,value)=>{
+const mind=(array,value)=>{
   let l = 0;
-  let r = dictionary.length-1;
+  let r = array.length-1;
   let c = 0;
   let com = 0;
   while (l <= r)
   {
     c = Math.floor((l + r) / 2);
-    com = dictionary[c].index-value;
+    com = array[c].index-value;
     if (com > 0) r = c - 1;
     else if (com < 0) l = c + 1;
     else return c;
   }
-  if (c >= dictionary.length)
-      return dictionary.length;
+  if (c >= array.length)
+      return array.length;
   if (com < 0) c++;
       return c;
 }

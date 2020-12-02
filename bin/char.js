@@ -71,15 +71,18 @@ const parse=(str)=>{
   let ret=[];
   let obj=evaluate(str);
   let con=[];
+  let upper=4;
   let commit=()=>
   {
-    ret.push({value:con.join(""),type:3})
+    ret.push({value:con.join(""),type:upper})
     con=[];
+    upper=4;
   }
   obj.forEach((i) => {
     switch (i.type) {
       case 3:
       con.push(i.value.toLowerCase());
+      upper=3;
       break;
       case 4:
       con.push(i.value);

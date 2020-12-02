@@ -22,13 +22,13 @@ sex("pedro");
 
 
 text=`
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Nullam ut lorem sit amet ligula facilisis iaculis sed et
 tellus. Lorem ipsum dolor sit amet, consectetur adipiscing
-elit. Pellentesque eros sem, rhoncus ut nunc eu, pretium 
-pulvinar diam. Curabitur sit amet porta neque. Nulla condimentum 
-sapien in mollis interdum. Aenean sed metus a mauris aliquam pulvinar. 
-Aliquam a pulvinar nulla. Duis porta consectetur sem, ac gravida ligula 
+elit. Pellentesque eros sem, rhoncus ut nunc eu, pretium
+pulvinar diam. Curabitur sit amet porta neque. Nulla condimentum
+sapien in mollis interdum. Aenean sed metus a mauris aliquam pulvinar.
+Aliquam a pulvinar nulla. Duis porta consectetur sem, ac gravida ligula
 condimentum vitae. Praesent placerat sodales eros, ac pharetra quam porttitor
 vel. Proin eleifend imperdiet erat, id egestas nulla suscipit sed.`;
 
