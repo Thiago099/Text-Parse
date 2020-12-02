@@ -1,0 +1,8 @@
+body{
+  background-color: black;
+  color: white;
+}
+div.output{
+  max-width: 1000px;
+  margin: auto;
+}
